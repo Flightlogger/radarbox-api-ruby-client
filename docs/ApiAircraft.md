@@ -15,4 +15,5 @@ Name | Type | Description | Notes
 **first_flight** | **DateTime** |  | [optional] 
 **serial_number** | **String** |  | [optional] 
 **photos** | **Array&lt;String&gt;** |  | [optional] 
+**aircraft_statitics** | [**Array&lt;ApiAircraftStatistic&gt;**](ApiAircraftStatistic.md) |  | [optional] 
 

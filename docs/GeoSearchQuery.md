@@ -3,6 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**page_size** | **Integer** |  | [optional] 
+**page** | **Integer** |  | [optional] 
 **min_latitude** | **Float** |  | 
 **max_latitude** | **Float** |  | 
 **min_longitude** | **Float** |  | 

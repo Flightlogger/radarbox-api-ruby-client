@@ -3,6 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**page_size** | **Integer** |  | [optional] 
+**page** | **Integer** |  | [optional] 
 **from_date** | **DateTime** |  | [optional] 
 **to_date** | **DateTime** |  | [optional] 
 **departure_from_date** | **DateTime** |  | [optional] 
