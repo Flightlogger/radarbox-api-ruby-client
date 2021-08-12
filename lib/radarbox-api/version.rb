@@ -10,5 +10,5 @@ Swagger Codegen version: 3.0.25
 =end
 
 module Radarbox
-  VERSION = '1.0.0'
+  VERSION = '2.1.14'
 end
