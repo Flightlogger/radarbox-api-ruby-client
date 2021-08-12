@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **observation_time** | **DateTime** |  | [optional] 
-**coordinates** | [**Coordinates**](Coordinates.md) |  | [optional] 
+**coordinates** | [**ApiCoordinates**](ApiCoordinates.md) |  | [optional] 
 **temperature** | **Integer** |  | [optional] 
 **dew_point** | **Integer** |  | [optional] 
 **wind_direction** | **Integer** |  | [optional] 

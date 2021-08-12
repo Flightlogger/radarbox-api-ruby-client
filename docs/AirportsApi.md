@@ -7,8 +7,6 @@ Method | HTTP request | Description
 [**get_airport**](AirportsApi.md#get_airport) | **GET** /airports/{icaoCode} | Airport by code
 [**get_datis**](AirportsApi.md#get_datis) | **GET** /airports/{icaoCode}/datis | Get D-ATIS by airport
 [**get_metar**](AirportsApi.md#get_metar) | **GET** /airports/{icaoCode}/metar | Get METAR by airport
-[**get_nat_tracks**](AirportsApi.md#get_nat_tracks) | **GET** /airports/natTracks | NAT (North Atlantic Tracks)
-[**get_notams**](AirportsApi.md#get_notams) | **GET** /airports/{icaoCode}/notams | Get NOTAMS by airport
 [**get_taf**](AirportsApi.md#get_taf) | **GET** /airports/{icaoCode}/taf | Get TAF by airport
 [**search_airport**](AirportsApi.md#search_airport) | **GET** /airports/search | Airport search
 
@@ -159,99 +157,6 @@ Name | Type | Description  | Notes
 
 
 
-# **get_nat_tracks**
-> GetNatPacTracksResponse get_nat_tracks
-
-NAT (North Atlantic Tracks)
-
-The North Atlantic Tracks are high altitude routes across the atlantic between Western Europe and North America. The tracks are updated daily. Use this endpoint to get the most up-to-date tracks
-
-### Example
-```ruby
-# load the gem
-require 'radarbox-api'
-# setup authorization
-Radarbox.configure do |config|
-end
-
-api_instance = Radarbox::AirportsApi.new
-
-begin
-  #NAT (North Atlantic Tracks)
-  result = api_instance.get_nat_tracks
-  p result
-rescue Radarbox::ApiError => e
-  puts "Exception when calling AirportsApi->get_nat_tracks: #{e}"
-end
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**GetNatPacTracksResponse**](GetNatPacTracksResponse.md)
-
-### Authorization
-
-[bearerToken](../README.md#bearerToken)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: */*
-
-
-
-# **get_notams**
-> GetNotamsResponse get_notams(icao_code)
-
-Get NOTAMS by airport
-
-NOTAMs (NOtice To AirMen) are a way of local aviation authorities alerting pilots of potential hazards. Use this endpoint if you want to see the alerts that are relevant for a specific airport.
-
-### Example
-```ruby
-# load the gem
-require 'radarbox-api'
-# setup authorization
-Radarbox.configure do |config|
-end
-
-api_instance = Radarbox::AirportsApi.new
-icao_code = 'icao_code_example' # String | ICAO code
-
-
-begin
-  #Get NOTAMS by airport
-  result = api_instance.get_notams(icao_code)
-  p result
-rescue Radarbox::ApiError => e
-  puts "Exception when calling AirportsApi->get_notams: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **icao_code** | **String**| ICAO code | 
-
-### Return type
-
-[**GetNotamsResponse**](GetNotamsResponse.md)
-
-### Authorization
-
-[bearerToken](../README.md#bearerToken)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: */*
-
-
-
 # **get_taf**
 > GetTafResponse get_taf(icao_code)
 
@@ -306,7 +211,7 @@ Name | Type | Description  | Notes
 
 Airport search
 
-Use this endpoint if you are tying to find all aiports in a country, city or within a specific region.
+Use this endpoint if you are trying to find all airports in a country, city or within a specific region.
 
 ### Example
 ```ruby

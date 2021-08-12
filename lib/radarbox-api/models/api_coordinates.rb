@@ -12,24 +12,24 @@ Swagger Codegen version: 3.0.25
 require 'date'
 
 module Radarbox
-  class ApiBusinessJetOperatorStatistics
-    attr_accessor :day
+  class ApiCoordinates
+    attr_accessor :latitude
 
-    attr_accessor :statistics
+    attr_accessor :longitude
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'day' => :'day',
-        :'statistics' => :'statistics'
+        :'latitude' => :'latitude',
+        :'longitude' => :'longitude'
       }
     end
 
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'day' => :'Object',
-        :'statistics' => :'Object'
+        :'latitude' => :'Object',
+        :'longitude' => :'Object'
       }
     end
 
@@ -43,25 +43,23 @@ module Radarbox
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})
       if (!attributes.is_a?(Hash))
-        fail ArgumentError, "The input argument (attributes) must be a hash in `Radarbox::ApiBusinessJetOperatorStatistics` initialize method"
+        fail ArgumentError, "The input argument (attributes) must be a hash in `Radarbox::ApiCoordinates` initialize method"
       end
 
       # check to see if the attribute exists and convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h|
         if (!self.class.attribute_map.key?(k.to_sym))
-          fail ArgumentError, "`#{k}` is not a valid attribute in `Radarbox::ApiBusinessJetOperatorStatistics`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
+          fail ArgumentError, "`#{k}` is not a valid attribute in `Radarbox::ApiCoordinates`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
         end
         h[k.to_sym] = v
       }
 
-      if attributes.key?(:'day')
-        self.day = attributes[:'day']
+      if attributes.key?(:'latitude')
+        self.latitude = attributes[:'latitude']
       end
 
-      if attributes.key?(:'statistics')
-        if (value = attributes[:'statistics']).is_a?(Array)
-          self.statistics = value
-        end
+      if attributes.key?(:'longitude')
+        self.longitude = attributes[:'longitude']
       end
     end
 
@@ -83,8 +81,8 @@ module Radarbox
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          day == o.day &&
-          statistics == o.statistics
+          latitude == o.latitude &&
+          longitude == o.longitude
     end
 
     # @see the `==` method
@@ -96,7 +94,7 @@ module Radarbox
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [day, statistics].hash
+      [latitude, longitude].hash
     end
 
     # Builds the object from hash

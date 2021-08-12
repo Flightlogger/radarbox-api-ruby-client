@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **bulletin_time** | **DateTime** |  | [optional] 
 **valid_from** | **DateTime** |  | [optional] 
 **valid_until** | **DateTime** |  | [optional] 
-**coordinates** | [**Coordinates**](Coordinates.md) |  | [optional] 
+**coordinates** | [**ApiCoordinates**](ApiCoordinates.md) |  | [optional] 
 **elevation** | **Integer** |  | [optional] 
 **forecast** | [**Array&lt;ApiTafForecast&gt;**](ApiTafForecast.md) |  | [optional] 
 
