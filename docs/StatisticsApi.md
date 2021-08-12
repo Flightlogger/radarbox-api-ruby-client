@@ -5,7 +5,7 @@ All URIs are relative to *https://api.radarbox.com/v2*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_airlines_statistics**](StatisticsApi.md#get_airlines_statistics) | **GET** /statistics/airlines | Statistics for major airlines
-[**get_bus_jet_models_statistics_internal**](StatisticsApi.md#get_bus_jet_models_statistics_internal) | **GET** /statistics/flights/business/models | Statistics for business jet operators
+[**get_bus_jet_models_statistics_internal**](StatisticsApi.md#get_bus_jet_models_statistics_internal) | **GET** /statistics/flights/business/models | Statistics for business jet models
 [**get_bus_jet_operator_statistics_internal**](StatisticsApi.md#get_bus_jet_operator_statistics_internal) | **GET** /statistics/flights/business/operators | Statistics for business jet operators
 [**get_business_airport_statistics**](StatisticsApi.md#get_business_airport_statistics) | **GET** /statistics/airports/business | Statistics for business flights on major airports
 [**get_business_flights_statistics**](StatisticsApi.md#get_business_flights_statistics) | **GET** /statistics/flights/business | Flights statistics (business)
@@ -61,9 +61,9 @@ This endpoint does not need any parameter.
 # **get_bus_jet_models_statistics_internal**
 > BusinessJetModelStatisticsResponse get_bus_jet_models_statistics_internal
 
-Statistics for business jet operators
+Statistics for business jet models
 
-Get statistics for major airlines
+Get statistics for business jet models
 
 ### Example
 ```ruby
@@ -76,7 +76,7 @@ end
 api_instance = Radarbox::StatisticsApi.new
 
 begin
-  #Statistics for business jet operators
+  #Statistics for business jet models
   result = api_instance.get_bus_jet_models_statistics_internal
   p result
 rescue Radarbox::ApiError => e
@@ -107,7 +107,7 @@ This endpoint does not need any parameter.
 
 Statistics for business jet operators
 
-Get statistics for major airlines
+Get statistics for business jet operators
 
 ### Example
 ```ruby

@@ -76,5 +76,9 @@ Name | Type | Description | Notes
 **created** | **DateTime** |  | [optional] 
 **updated** | **DateTime** |  | [optional] 
 **positions** | [**Array&lt;ApiTrail&gt;**](ApiTrail.md) |  | [optional] 
+**flight_url** | **String** |  | [optional] 
+**flight_kml** | **String** |  | [optional] 
+**flight_csv** | **String** |  | [optional] 
+**flight_geo_json** | **String** |  | [optional] 
 **status** | **String** |  | [optional] 
 
