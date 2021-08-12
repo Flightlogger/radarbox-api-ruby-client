@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **name** | **String** |  | [optional] 
 **city** | **String** |  | [optional] 
 **state** | **String** |  | [optional] 
+**main_airport** | **BOOLEAN** |  | [optional] 
 **country** | **String** |  | [optional] 
 **elevation** | **Integer** |  | [optional] 
 **coordinates** | [**Coordinates**](Coordinates.md) |  | [optional] 

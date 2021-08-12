@@ -4,6 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **number** | **Integer** |  | [optional] 
+**id** | **String** |  | [optional] 
+**notam_class** | **String** |  | [optional] 
 **year** | **String** |  | [optional] 
 **type** | **String** |  | [optional] 
 **effective_start** | **DateTime** |  | [optional] 

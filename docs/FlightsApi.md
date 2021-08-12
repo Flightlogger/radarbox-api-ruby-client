@@ -79,6 +79,8 @@ api_instance = Radarbox::FlightsApi.new
 opts = { 
   body: Radarbox::GeoSearchQuery.new # GeoSearchQuery | 
   authorization: 'authorization_example' # String | 
+  page: 56 # Integer | Request page
+  page_size: 56 # Integer | Page size
 }
 
 begin
@@ -96,6 +98,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**GeoSearchQuery**](GeoSearchQuery.md)|  | [optional] 
  **authorization** | **String**|  | [optional] 
+ **page** | **Integer**| Request page | [optional] 
+ **page_size** | **Integer**| Page size | [optional] 
 
 ### Return type
 
@@ -131,6 +135,8 @@ api_instance = Radarbox::FlightsApi.new
 opts = { 
   body: Radarbox::FlightsQuery.new # FlightsQuery | 
   authorization: 'authorization_example' # String | 
+  page: 56 # Integer | Request page
+  page_size: 56 # Integer | Page size
 }
 
 begin
@@ -148,6 +154,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**FlightsQuery**](FlightsQuery.md)|  | [optional] 
  **authorization** | **String**|  | [optional] 
+ **page** | **Integer**| Request page | [optional] 
+ **page_size** | **Integer**| Page size | [optional] 
 
 ### Return type
 

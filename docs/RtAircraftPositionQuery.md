@@ -3,6 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**page_size** | **Integer** |  | [optional] 
+**page** | **Integer** |  | [optional] 
 **registrations** | **Array&lt;String&gt;** |  | [optional] 
 **airlines** | **Array&lt;String&gt;** |  | [optional] 
 **aircraft_types** | **Array&lt;String&gt;** |  | [optional] 
